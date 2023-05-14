@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/4f027a41bf.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/style.css" />
+    <title>Music player</title>
+  </head>
+
+  <body>
+    <!-- header section -->
+    <header>
+      <img class="logo" src="assets/img/main-logo.png" alt="cant load" />
+      <h2 class="fav">Favourites</h2>
+
+      <div class="search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Search" />
+        <i class="fa-solid fa-microphone"></i>
+      </div>
+      <div class="profile-logo"><img src="assets/img/profile-logo.jpg" /></div>
+    </header>
+
+    <!-- main section  -->
+    <main class="main-container">
+      <div class="song-section">
+        <div class="albumposter-container">
+          <div class="box">
+            <img src="assets/img/1 album-poster.jpg" alt="" />
+          </div>
+          <div class="box">
+            <img src="assets/img/2 album-poster.jpg" alt="" />
+          </div>
+          <div class="box">
+            <img src="assets/img/3 album-poster.jpg" alt="" />
+          </div>
+        </div>
+        <!-- latest release section -->
+
+        <div class="latest-release">
+          <div class="lr-heading">
+            <h4>Latest Release</h4>
+          </div>
+
+          <div class="latest-song-container">
+            <div class="main-latest-song">
+              <img src="assets/img/1lr.jpg" alt="" />
+              <i id="3" class="play-icon fa-solid fa-circle-play"></i>
+
+              <div class="heading">
+                <h4>Dil Hai Bholaa</h4>
+                <div class="subtitle">Aug 11,2023</div>
+              </div>
+              <div class="menu_time1">
+                <i class="bi bi-three-dots"></i>
+
+                <div class="subtitle">4:44</div>
+              </div>
+            </div>
+            <div class="main-latest-song">
+              <img src="assets/img/2lr.jpg" alt="" />
+              <i id="3" class="play-icon fa-solid fa-circle-play"></i>
+
+              <div class="heading">
+                <h4>Tu Jhooti Mai Makkar</h4>
+                <div class="subtitle">Aug 11,2023</div>
+              </div>
+              <div class="menu_time2">
+                <i class="bi bi-three-dots"></i>
+
+                <div class="subtitle">4:44</div>
+              </div>
+            </div>
+            <div class="main-latest-song">
+              <img src="assets/img/3lr.jpg" alt="" />
+              <i id="3" class="play-icon fa-solid fa-circle-play"></i>
+
+              <div class="heading">
+                <h4>Bairiya</h4>
+                <div class="subtitle">Aug 11,2023</div>
+              </div>
+              <div class="menu_time3">
+                <i class="bi bi-three-dots"></i>
+
+                <div class="subtitle">4:44</div>
+              </div>
+            </div>
+            <div class="main-latest-song">
+              <img src="assets/img/4lr.jpg" alt="" />
+              <i id="3" class="play-icon fa-solid fa-circle-play"></i>
+
+              <div class="heading">
+                <h4>Wahi Toh Khuda Hai</h4>
+                <div class="subtitle">Aug 11,2023</div>
+              </div>
+              <div class="menu_time4">
+                <i class="bi bi-three-dots"></i>
+
+                <div class="subtitle">4:44</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- place here -->
+        <!-- popular artists -->
+        <div class="popular-artist">
+          <div class="h4">
+            <h4>Popular Artists</h4>
+            <div class="btn">
+              <i class="bi bi-arrow-left"></i>
+              <i class="bi bi-arrow-right"></i>
+            </div>
+          </div>
+          <div class="artist-img-container">
+            <li>
+              <div class="img-play">
+                <img src="assets/img/1.jpg" alt="" />
+                <i id="3" class="fa-solid fa-circle-play"></i>
+              </div>
+              <h5 class="music-info">Armaan Malik<br /></h5>
+            </li>
+
+            <li>
+              <div class="img-play">
+                <img src="assets/img/2a.jpg" alt="" />
+                <i id="3" class="fa-solid fa-circle-play"></i>
+              </div>
+              <h5 class="music-info">Arijit Singh<br /></h5>
+            </li>
+            <li>
+              <div class="img-play">
+                <img src="assets/img/3a.jpg " alt="" />
+                <i id="3" class="fa-solid fa-circle-play"></i>
+              </div>
+              <h5 class="music-info">Darshan Rawal<br /></h5>
+            </li>
+            <li>
+              <div class="img-play">
+                <img src="assets/img/4a.jpg" alt="" />
+                <i id="3" class="fa-solid fa-circle-play"></i>
+              </div>
+              <h5 class="music-info">Sanam Puri<br /></h5>
+            </li>
+            <li>
+              <div class="img-play">
+                <img src="assets/img/5a.jpg" alt="" />
+                <i id="3" class="fa-solid fa-circle-play"></i>
+              </div>
+              <h5 class="music-info">Pritam Chakraborty<br /></h5>
+            </li>
+            <li>
+              <div class="img-play">
+                <img src="assets/img/6a.jpg" alt="" />
+                <i id="3" class="fa-solid fa-circle-play"></i>
+              </div>
+              <h5 class="music-info">Sonu Nigam<br /></h5>
+            </li>
+            <li>
+              <div class="img-play">
+                <img src="assets/img/7a.jpg" alt="" />
+                <i id="3" class="fa-solid fa-circle-play"></i>
+              </div>
+              <h5 class="music-info">Guru Randhawa<br /></h5>
+            </li>
+            <li>
+              <div class="img-play">
+                <img src="assets/img/8a.jpg" alt="" />
+                <i id="3" class="fa-solid fa-circle-play"></i>
+              </div>
+              <h5 class="music-info">KK<br /></h5>
+            </li>
+            <li>
+              <div class="img-play">
+                <img src="assets/img/9a.jpg" alt="" />
+                <i id="3" class="fa-solid fa-circle-play"></i>
+              </div>
+              <h5 class="music-info">Shreya<br /></h5>
+            </li>
+            <li>
+              <div class="img-play">
+                <img src="assets/img/10a.jpg" alt="" />
+                <i id="3" class="fa-solid fa-circle-play"></i>
+              </div>
+              <h5 class="music-info">Neha Kakkar<br /></h5>
+            </li>
+            <li>
+              <div class="img-play">
+                <img src="assets/img/12a.jpg" alt="" />
+                <i id="3" class="fa-solid fa-circle-play"></i>
+              </div>
+              <h5 class="music-info">Palak Mucchal<br /></h5>
+            </li>
+          </div>
+        </div>
+        <!-- place here  -->
+
+        <!-- popular songs -->
+        <div class="popular-song">
+          <div class="h4">
+            <h4>Popular Song</h4>
+            <div class="btn">
+              <i class="bi bi-arrow-left"></i>
+              <i class="bi bi-arrow-right"></i>
+            </div>
+          </div>
+          <!-- song cards section  -->
+          <div class="pop-song">
+            <li>
+              <div class="img-play">
+                <img src="assets/img/pop13.jpg" alt="" />
+                <i id="3" class="fa-solid fa-circle-play"></i>
+              </div>
+              <h5 class="music-info">
+                Shiddat<br />
+                <div class="subtitle">Darshan Rawal</div>
+              </h5>
+            </li>
+            <li>
+              <div class="img-play">
+                <img src="assets/img/pop14.jpg" alt="" />
+                <i id="3" class="fa-solid fa-circle-play"></i>
+              </div>
+              <h5 class="music-info">
+                Main agar kahoon<br />
+                <div class="subtitle">Armaan malik</div>
+              </h5>
+            </li>
+            <li>
+              <div class="img-play">
+                <img src="assets/img/pop15.jpg" alt="" />
+                <i id="3" class="fa-solid fa-circle-play"></i>
+              </div>
+              <h5 class="music-info">
+                Tere pyar mein<br />
+                <div class="subtitle">Arijit singh</div>
+              </h5>
+            </li>
+            <li>
+              <div class="img-play">
+                <img src="assets/img/pop16.jpg" alt="" />
+                <i id="3" class="fa-solid fa-circle-play"></i>
+              </div>
+              <h5 class="music-info">
+                Ek main or ek tu<br />
+                <div class="subtitle">Benny dayal</div>
+              </h5>
+            </li>
+            <li>
+              <div class="img-play">
+                <img src="assets/img/pop2.jpg" alt="" />
+                <i id="3" class="fa-solid fa-circle-play"></i>
+              </div>
+              <h5 class="music-info">
+                Iss qadar <br />
+                <div class="subtitle">Darshan rawal</div>
+              </h5>
+            </li>
+            <li>
+              <div class="img-play">
+                <img src="assets/img/pop8.jpg" alt="" />
+                <i id="3" class="fa-solid fa-circle-play"></i>
+              </div>
+              <h5 class="music-info">
+                Tujhe kitna chahane lage<br />
+                <div class="subtitle">Arijit singh</div>
+              </h5>
+            </li>
+            <li>
+              <div class="img-play">
+                <img src="assets/img/pop9.jpg" alt="" />
+                <i id="3" class="fa-solid fa-circle-play"></i>
+              </div>
+              <h5 class="music-info">
+                Aashaqi aa gayi<br />
+                <div class="subtitle">Arijit singh</div>
+              </h5>
+            </li>
+            <li>
+              <div class="img-play">
+                <img src="assets/img/pop12.jpg" alt="" />
+                <i id="3" class="fa-solid fa-circle-play"></i>
+              </div>
+              <h5 class="music-info">
+                Oo Bedardeya<br />
+                <div class="subtitle">Arijit singh</div>
+              </h5>
+            </li>
+            <li>
+              <div class="img-play">
+                <img src="assets/img/pop4.jpeg" alt="" />
+                <i id="3" class="fa-solid fa-circle-play"></i>
+              </div>
+              <h5 class="music-info">
+                Kabhi tume yaad<br />
+                <div class="subtitle">Darshan raval</div>
+              </h5>
+            </li>
+            <li>
+              <div class="img-play">
+                <img src="assets/img/pop5.jpg" alt="" />
+                <i id="3" class="fa-solid fa-circle-play"></i>
+              </div>
+              <h5 class="music-info">
+                Jannat we<br />
+                <div class="subtitle">Darshan rawal</div>
+              </h5>
+            </li>
+
+            <li>
+              <div class="img-play">
+                <img src="assets/img/pop6.jpg" alt="" />
+                <i id="3" class="fa-solid fa-circle-play"></i>
+              </div>
+              <h5 class="music-info">
+                Tere Naal <br />
+                <div class="subtitle">Darshan rawal</div>
+              </h5>
+            </li>
+            <li>
+              <div class="img-play">
+                <img src="assets/img/pop7.jpg" alt="" />
+                <i id="3" class="fa-solid fa-circle-play"></i>
+              </div>
+              <h5 class="music-info">
+                Tere siva jag mein<br />
+                <div class="subtitle">Arijit singh</div>
+              </h5>
+            </li>
+
+            <li>
+              <div class="img-play">
+                <img src="assets/img/pop8.jpg" alt="" />
+                <i id="3" class="fa-solid fa-circle-play"></i>
+              </div>
+              <h5 class="music-info">
+                Tuje kitna chahane lage ham<br />
+                <div class="subtitle">Arijit singh</div>
+              </h5>
+            </li>
+            <li>
+              <div class="img-play">
+                <img src="assets/img/am8.jpg" alt="" />
+                <i id="3" class="fa-solid fa-circle-play"></i>
+              </div>
+              <h5 class="music-info">
+                Ghar se nikal te hi <br />
+                <div class="subtitle">Armaan malik</div>
+              </h5>
+            </li>
+            <li>
+              <div class="img-play">
+                <img src="assets/img/pop10.jpg" alt="" />
+                <i id="3" class="fa-solid fa-circle-play"></i>
+              </div>
+              <h5 class="music-info">
+                Tumse bhi jyada <br />
+                <div class="subtitle">Arijit singh</div>
+              </h5>
+            </li>
+            <li>
+              <div class="img-play">
+                <img src="assets/img/am3.jpg" alt="" />
+                <i id="3" class="fa-solid fa-circle-play"></i>
+              </div>
+              <h5 class="music-info">
+                Control<br />
+                <div class="subtitle">Armaan malik</div>
+              </h5>
+            </li>
+            <li>
+              <div class="img-play">
+                <img src="assets/img/am9.jpg" alt="" />
+                <i id="3" class="fa-solid fa-circle-play"></i>
+              </div>
+              <h5 class="music-info">
+                Veham <br />
+                <div class="subtitle">Armaan malik</div>
+              </h5>
+            </li>
+          </div>
+        </div>
+      </div>
+
+      <!-- queue-section -->
+      <div class="queue-section">
+        <h1>Queue</h1>
+        <!-- playlist section -->
+        <div class="playlist">
+          <h4 class="active">
+            <span></span><i class="fa-solid fa-music"></i>Playlist
+          </h4>
+          <h4><span></span><i class="fa-solid fa-music"></i>Last listening</h4>
+          <h4><span></span><i class="fa-solid fa-music"></i>Recommended</h4>
+        </div>
+        <!-- playlist section end -->
+
+        <!-- menu-song  -->
+        <div class="menu-song">
+          <li class="song">
+            <span>01</span>
+            <img src="assets/img/2lr.jpg" alt="" />
+            <h5 class="music-info">
+              Tere pyar mein<br />
+              <div class="subtitle">Arijit singh</div>
+            </h5>
+            <i id="1" class="play-icon fa-solid fa-circle-play"></i>
+          </li>
+          <li class="song">
+            <span>02</span>
+            <img src="assets/img/4lr.jpg" alt="" />
+            <h5 class="music-info">
+              Wahi toh khuda hai<br />
+              <div class="subtitle">Armaan malik</div>
+            </h5>
+            <i id="2" class="play-icon fa-solid fa-circle-play"></i>
+          </li>
+          <li class="song">
+            <span>03</span>
+            <img src="assets/img/am1.jpg" alt="" />
+            <h5 class="music-info">
+              Hua hai aaj pehli baar<br />
+              <div class="subtitle">Armaan malik</div>
+            </h5>
+            <i id="3" class="play-icon fa-solid fa-circle-play"></i>
+          </li>
+          <li class="song">
+            <span>04</span>
+            <img src="assets/img/pop1.jpg" alt="" />
+            <h5 class="music-info">
+              Judaiyaan<br />
+              <div class="subtitle">Darshan raval</div>
+            </h5>
+            <i id="3" class="play-icon fa-solid fa-circle-play"></i>
+          </li>
+          <li class="song">
+            <span>05</span>
+            <img src="assets/img/am2.jpg" alt="" />
+            <h5 class="music-info">
+              Pehla pyar<br />
+              <div class="subtitle">Armaan malik</div>
+            </h5>
+            <i id="3" class="play-icon fa-solid fa-circle-play"></i>
+          </li>
+          <li class="song">
+            <span>06</span>
+            <img src="assets/img/pop2.jpg" alt="" />
+            <h5 class="music-info">
+              Iss qadar <br />
+              <div class="subtitle">Darshan raval</div>
+            </h5>
+            <i id="3" class="play-icon fa-solid fa-circle-play"></i>
+          </li>
+          <li class="song">
+            <span>07</span>
+            <img src="assets/img/pop8.jpg" alt="" />
+            <h5 class="music-info">
+              Tujhe kitna chahane lage<br />
+
+              <div class="subtitle">Arijit singh</div>
+            </h5>
+            <i id="3" class="play-icon fa-solid fa-circle-play"></i>
+          </li>
+          <li class="song">
+            <span>08</span>
+            <img src="assets/img/am3.jpg" alt="" />
+            <h5 class="music-info">
+              Control<br />
+              <div class="subtitle">Armaan malik</div>
+            </h5>
+            <i id="3" class="play-icon fa-solid fa-circle-play"></i>
+          </li>
+          <li class="song">
+            <span>09</span>
+            <img src="assets/img/pop7.jpg" alt="" />
+            <h5 class="music-info">
+              Tere siva<br />
+              <div class="subtitle">Arijit singh</div>
+            </h5>
+            <i id="3" class="play-icon fa-solid fa-circle-play"></i>
+          </li>
+          <li class="song">
+            <span>10</span>
+            <img src="assets/img/am5.jpg" alt="" />
+            <h5 class="music-info">
+              Tere mere <br />
+              <div class="subtitle">Armaan malik</div>
+            </h5>
+            <i id="3" class="play-icon fa-solid fa-circle-play"></i>
+          </li>
+          <li class="song">
+            <span>011</span>
+            <img src="assets/img/am6.jpg" alt="" />
+            <h5 class="music-info">
+              Butta Bomma<br />
+              <div class="subtitle">Arijit singh</div>
+            </h5>
+            <i id="3" class="play-icon fa-solid fa-circle-play"></i>
+          </li>
+          <li class="song">
+            <span>12</span>
+            <img src="assets/img/am8.jpg" alt="" />
+            <h5 class="music-info">
+              Ghar se nikal te hi <br />
+              <div class="subtitle">Armaan malik</div>
+            </h5>
+            <i id="3" class="play-icon fa-solid fa-circle-play"></i>
+          </li>
+        </div>
+      </div>
+
+      <!-- menu-song ends  -->
+
+      <div class="music-play-section">
+        <div class="wave">
+          <div class="wave1"></div>
+          <div class="wave1"></div>
+          <div class="wave1"></div>
+        </div>
+        <!-- end of wave  -->
+        <img src="assets/img/1.jpg" alt="" id="song-poster" />
+        <h5 id="title">
+          Pehla Pyar
+          <div class="subtitle">Armaan Malik</div>
+        </h5>
+        <div class="icon">
+          <i class="music-icon bi bi-music-note-beamed"></i>
+          <i class="bi bi-skip-start-fill"></i>
+          <i id="play-icon" class="bi bi-play-fill"></i>
+          <i class="bi bi-skip-end-fill"></i>
+          <i id="download-icon" class="bi bi-cloud-arrow-down-fill"></i>
+        </div>
+        <span id="current-time">0:00</span>
+        <div class="bar">
+          <!-- <input type="range" id="seek" min="0" max="100" /> -->
+          <div class="bar2"></div>
+          <div class="dot"></div>
+        </div>
+        <span id="current-time">0:60</span>
+
+        <div class="vol">
+          <i id="vol-icon" class="bi bi-volume-down-fill"></i>
+          <input type="range" id="vol-range" />
+          <div class="volbar"></div>
+          <div class="vol-dot"></div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
